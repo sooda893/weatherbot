@@ -26,7 +26,7 @@
 
     function drawChart(json) {
       const mydata = {
-        labels: json.daily.min,
+        labels: json.daily.time,
         datasets: [{
           label: '最高気温',
           data: json.daily.temperature_2m_max,
