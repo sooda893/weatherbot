@@ -26,14 +26,14 @@
 
     function drawChart(json) {
       const mydata = {
-        labels: json.daily.time,
+        labels: json.hourly.time,
         datasets: [{
-          label: '最高気温',
-          data: json.daily.temperature_2m_max,
+          label: '気温',
+          data: json.hourly.temperature_2m,
           borderColor: 'rgb(192, 75, 75)',
         },{
-          label: '最低気温',
-          data: json.daily.temperature_2m_min,
+          label: '降水確率',
+          data: json.hourly.rain,
           borderColor: 'rgb(75, 75, 192)',
         }]
       }
